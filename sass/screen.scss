@@ -1,0 +1,476 @@
+@import "lib/base";
+.is-hidden{
+	display: none;
+}
+.cover{
+	text-align: center;
+}
+h2 small{
+	display: block;
+	font-size: 40%;
+	padding-top: 10px;
+}
+.slide_text{
+	&:before{
+		content: ' ';
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		width: 100%;
+		height: 200px;
+		background: url(../img/slide-text.png) no-repeat 0 0;
+		-webkit-background-size: 100% auto;
+		     -o-background-size: 100% auto;
+		        background-size: 100% auto;
+	}
+}
+.slide-master{
+	background: #00AEEF url(../img/slide-master.png) no-repeat 100% 0;
+	@include background-size(auto 100%);
+	h2{
+		margin-top: 200px;
+	}
+}
+.slide_chapter{
+	text-align: center;
+	h2{
+		font-size: 350%;
+		margin-top: 100px;
+	}
+}
+.supercover{
+	div{
+		overflow: visible;
+	}
+	img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		display: block;
+	}
+}
+%input{
+	&:invalid{
+		outline:10px solid #c00
+	}
+	&:valid{
+		outline:10px solid green
+	}
+}
+
+body .slide code{
+	background: #FAFAA2 !important;
+	border-radius: 10px !important;
+}
+// Cover
+#cover{
+	h2{
+		margin:150px 0 0 110px;
+		color:#FFF;
+		text-align:center;
+		font-size:90px;
+		text-align: left;
+		font-weight: bold;
+	}
+	p{
+		margin:10px 0 0 110px;
+		text-align:left;
+		color:#FFF;
+		font-size:40px;
+	}
+	a{
+		color: #fff;
+	}
+}
+//contact slide
+.contacts{
+	h2{
+		font-size: 200%;
+	}
+	dt{
+		font-size: 150%;
+	}
+	dd{
+		
+	}
+}
+#input1{
+	input{
+		font-size: 100px;
+		width: 300px;
+	}
+	img{
+		width: 700px;
+		display: block;
+	}
+}
+#input15{
+	input{
+		@extend %input;
+	}
+}
+#input15, #input151{
+	@extend #input1;
+	input{
+		@extend %input;
+	}
+	button{
+		-webkit-appearance:none;
+		font-size: 100px;
+		margin-left: 20px;
+		padding: 10px;
+	}
+}
+#email{
+	@extend #input1;
+	input{
+		@extend %input;
+	}
+}
+#input2{
+	input{
+		font-size: 60px;
+		width: 100%;
+	}
+}
+#progress{
+	progress{
+		width: 100%;
+		height: 200px;
+		font-size: 100px;
+	}
+}
+#gradient1{
+	text-shadow:3px 3px 0 rgba(#000,.6);
+	background-color:#269;
+	background-image: linear-gradient(white 2px, transparent 2px),
+	linear-gradient(90deg, white 2px, transparent 2px),
+	linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+	linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+#gradient0{
+	text-shadow:3px 3px 0 rgba(#000,.6);
+	@include background-image(linear-gradient(#232323, #5c5c5c));
+}
+#gradient2{
+	text-shadow:3px 3px 0 rgba(#000,.6);
+	background-color: #6d695c;
+	background-image:
+	repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	background-size: 70px 120px;
+}
+
+
+//==================ANIMATIONS
+// input width animation
+#input{
+	input{
+		background: #eee;
+		font-size: 40px;
+		padding: 10px;
+		width: 200px;
+		@include transition(width 300ms linear);
+		&:focus{
+			width: 600px;
+		}
+	}
+}
+// bad
+.shout_main{
+	font-weight: bold;
+	text-shadow: 2px 2px 1px #333;
+}
+#badge{
+	@include background-image(linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939));
+	color: #fff;
+	div{
+		overflow:visible
+	}
+	.thebadge{
+		position: absolute;
+		top: 0;
+		right: 100px;
+		width: 100px;
+		@include background-image(linear-gradient(top, #00a336, #8fc33c));
+		@include border-radius(0 0 10px 10px);
+		background-color: #00a336;
+		@include box-shadow(inset 0 -1px 0 #b8e120, 0 3px 3px rgba(4,93,49,.3));
+		cursor: pointer;
+		padding: 10px;
+		font-size: 11px;
+		line-height: 1.3;
+		overflow: hidden;
+		text-shadow: 0 1px 2px rgba(#000,.4);
+		a{
+			color: #fff;
+		}
+		.thebadge__drop{
+			height: 0;
+			margin: 0;
+			text-align: center;
+			overflow: hidden;
+			list-style: none;
+			// the only meaningful part
+			padding: 2px 10px;
+			@include transition(all 300ms ceaser($linear));
+			li{text-indent: 0;&:before{display:none;}}
+		}
+		&:hover{
+			.thebadge__drop{
+				height: 165px;
+				padding-top: 10px;
+				@include transition(all 300ms ceaser($easeInOutBack));
+			}
+		}
+	}
+	.icon-ios {
+		display: block;
+		background: inline-image('ios1.png','image/png')  no-repeat 50% 50%;
+		@include image-size('ios1.png');
+		width: 100%;
+	}
+	.icon-android {
+		display:block;
+		background: inline-image('android.png','image/png')  no-repeat 50% 50%;
+		@include image-size('ios1.png');
+		width: 100%;
+	}
+}
+// uberbutton
+#button{
+	@include background-image(linear-gradient(bottom, #01843e 40%, #50a94e 90%));
+	text-align: center;
+	.funny-btn {
+		margin-top: 172px;
+		@include transform(scale(4));
+		position: relative;
+		display: inline-block;
+		padding: 0 27px;
+		height: 62px;
+		line-height: 62px;
+		color: #006536;
+		font-size: 24px;
+		font-family: Arial,sans-serif;
+		text-decoration: none;
+		@include border-radius(7px);
+		@include transition(all .3s ease-in-out);
+		@include box-shadow(2px 2px 9px rgba(3,94,48,.43));
+		background: #ffed01 inline-image('funny-btn.png','image/png') repeat-x 0 0;
+		&:hover {
+			background: #c7e67d inline-image('funny-btn-h.png','image/png')  repeat-x 100% 0;
+		}
+	}
+}
+#d3{
+	.movie{
+		width: 262px;
+		float: left;
+		margin: 20px;
+	}
+	.movie__pic {
+		@include perspective(1000);
+		//-webkit-transition: 0.6s;
+		@include transition(all .6s linear);
+		cursor: pointer;
+		img{
+			width: 262px;
+			height: 173px;
+			box-shadow:0 0 16px rgba(#000, .8);
+			display: block;
+		}
+		&:hover{
+			.movie__flipper{
+				@include transform(rotate3d(0,1,0,35deg))
+			}
+		}
+		&.flipped{
+			@include transform(scale(1.1));
+			.movie__flipper{
+				@include transform(rotateY(180deg))
+			}
+		}
+		.movie__flipper {
+			//-webkit-transition: 0.6s;
+			@include transition(all .6s linear);
+			@include transform-style(preserve-3d);
+			position: relative;
+		}
+		 .movie__front, .movie__back {
+			@include backface-visibility(hidden);
+			position: absolute;
+			top: 0;
+			left: 0;
+		 }
+		.movie__front {
+			background: #ccc;
+			z-index: 2;
+		}
+		.movie__back {
+			background: #444;
+			@include transform(rotateY(180deg));
+			@include box-sizing(border-box);
+			line-height: 1.2;
+			color: #fff;
+			h3{
+				padding: 18px;
+				color: #fff;
+				padding: 10px 0 10px 10px;
+				font-size: 19px;
+				font-weight: normal;
+			}
+			p{
+				font-size: 11px;
+				line-height: 1.3;
+				margin: 0 10px;
+			}
+		}
+	}
+	.movie__left{
+		position: absolute;
+		background: #222;
+		z-index: 1;
+		width: 50px;
+		left: -25px;
+		height: 173px;
+		@include transform(rotate3d(0,1,0,-90deg) translatex(-25px));
+	}
+	.movie_orange .movie__left{
+			background: #f60;
+		}
+	.movie__pic, .movie__front, .movie__back {
+		width: 262px;
+		height: 173px;
+		margin-bottom: 10px;
+	}
+	.flipped .movie__left{
+		opacity:0;
+		//-webkit-transition: 0.6s;
+		@include transition(all .6s linear);
+	}
+}
+#popup{
+	.overlay{
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		opacity: 0;
+		z-index: 2000;
+		background: rgba(#000,.7);
+		@include transition(all 500ms linear);
+		z-index: -1;
+		&.is-shown{
+			opacity: 1;
+			z-index: 2000;
+		}
+	}
+	.popup{
+		position: fixed;
+		top: 100px;
+		z-index: 2100;
+		left: 50%;
+		width: 500px;
+		height: 400px;
+		margin-left: -250px;
+		background: #EDEDED;
+		@include transform(translate3d(0,-700px,0));
+		@include transition(all 500ms ceaser($easeInOutBack));
+		box-shadow: 0 0 30px rgba(#000,1);
+
+		background-color: #ECECEC;
+		@include background-image(linear-gradient(bottom, #7D7D7D 0px, #EDEDED 60px));
+		//
+		&.is-shown{
+			@include transform(translate3d(0,0,0));
+			@include transition(all 500ms ceaser($easeInOutBack));
+		}
+	}
+	.popup__header{
+		background: #404040;
+		border-bottom: 1px solid #353535;
+		border-top: 3px solid #F68667;
+		box-shadow: 0 6px 10px 0px rgba(#000,.2);
+	}
+	.popup__title{
+		@include text-shadow(0 1px 2px rgba(0,0,0,.75));
+		font-family: 'LucidaSans-Demi', Arial, "Helvetica CY",  sans-serif;
+		color: #F7F7F7;
+		-webkit-mask-image: -webkit-linear-gradient(rgba(0,0,0,1) 40%, rgba(255,255,255,0.6) 70%);
+		font-size: 19px;
+		padding: 14px 0 14px 10px;
+		line-height: 1;
+	}
+}
+#popup1{
+	@extend #popup;
+	.popup{
+		@include transition(all 500ms ceaser($easeOutBack));
+		@include transform(translate3d(1000px,-700px,0) rotate(90deg));
+		&.is-shown{
+			@include transition(all 500ms ceaser($easeInOutBack));
+		}
+	}
+}
+#oldway{
+	text-align: center;
+	font-size: 250%;
+}
+#te{
+	.block{
+		width: 100px;
+		padding: 30px;
+		border: 2px solid green;
+		@include transition(all 1500ms ceaser($easeInOutBack));
+		&.is-wide{
+			width: 300px;
+		}
+	}
+
+}
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever{
+//         @include sized-sprite($icons, badge_hit); //or
+//         @include s($i, badge_hit);
+//     }
+// ### animation example
+//     @include keyframes(rotate) {
+//        from {
+//           @include rotate(0);
+//        }
+//        to {
+//           @include rotate(360);
+//         }
+//     }
+// ## animation usage
+//     body:hover{
+// 	    @include animation(rotate 200s linear infinite);
+//     }
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in);
+// ## gradient example
+//     @include background-image(linear-gradient(#232323, #5c5c5c));
+// ## making bw-images
+//     img{@extend %gray;}
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     @min-screen(320){ css goes here}
+// @max-screen(1000), @iphone5, @iphone4, @ipad-retina, @ipad, @hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3 {
+//       .item-#{$i} { width: 2em * $i; }
+//     }
+//     @each $s in a,b,c{
+// 	    #{$s}
+//     }
+// BTW these comments will not render into css
+// for awesomeness use .🍺 class. Example:
+// .🍺{beer:everything}

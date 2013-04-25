@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>CSS3 Blah Blah</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<link rel="stylesheet" href="shower/themes/akella/styles/screen.css">
+	<link rel="stylesheet" href="css/screen.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/transition-events.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>CSS3 Blah Blah</h1>
+		<p>akella at <a href="coderiver.com.ua">coderiver.com.ua</a></p>
+	</header>
+	<section class="slide slide-master" id="cover"><div>
+		<h2>CSS4 HTML5</h2>
+		<p ><a href="http://cssing.org.ua">Юрий Артюх</a></p>
+		
+		<!-- photo by John Carey, fiftyfootshadows.net -->
+	</div></section>
+	<section class="slide cover"><div>
+		<img src="pictures/html5.png" alt="">
+	</div></section>
+	
+	
+	<!-- ================== -->
+	<!-- =======CSS forms=========== -->
+	<!-- ================== -->
+	<section class="slide shout shout_main"><div>
+		<h2>Формы <small>новые поля</small></h2>
+	</div></section>
+	
+	<section class="slide slide_text" id="input1"><div>
+		<h2>&lt;input type=<code>url</code>, <code>tel</code>, <code>number</code></h2>
+		<div>
+			<form><input type="number" required></form>
+		</div><br>
+		<div><img src="img/ios.jpg" alt=""></div>
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide slide_text" id="input151"><div>
+		<h2>&lt;input type=<code>url</code>, <code>tel</code>, <code>number</code></h2>
+		<div>
+			<form><input type="number" placeholder="3" required><button>Submit</button></form>
+		</div><br>
+		
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide slide_text" id="email"><div>
+		<h2>&lt;input type=<code>email</code></h2>
+		<div>
+			<form><input type="email" required></form>
+		</div><br>
+
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide slide_text" id="input15"><div>
+		<h2><code>input:valid{...}</code> + <code>required</code></h2>
+		<div>
+			<form><input type="number" required><button type="submit" value="Submit">Submit</buttom></form>
+		</div><br>
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide slide_text" id="input2"><div>
+		<h2>Подсказки, <code>list="what" <br>    &nbsp;&nbsp;datalist id="what"</code></h2>
+		<input type="text" list="autocomplete" value="P" class="big-input">
+		<datalist id="autocomplete">
+		    <option value="Porn" >
+		    <option value="PSD" >
+		    <option value="Porn free download" >
+		    <option value="HTML5" label="HTML5">
+		    <option value="HOT ASIAN TEENS" >
+		    <option value="HOT PORN" >
+		</datalist>
+		
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide slide_text" id="progress"><div>
+		<h2><code>&lt;progress&gt;</code></h2>
+		<progress max="0" value="0.5" id="progress2"></progress>
+	</div></section>
+	
+	<section class="slide slide_text" id="progress1"><div>
+		<h2>В других браузерах</h2>
+		<img src="img/progress_everywhere.png" alt="">
+	</div></section>
+	
+	
+	
+	
+	<!-- ================== -->
+	<!-- =======CSS градиенты=========== -->
+	<!-- ================== -->
+	<section class="slide shout slide_text" id="gradient0"><div>
+		<h2>Градиенты</h2>
+	</div></section>
+	<section class="slide shout gradient1 slide_text" id="gradient1"><div>
+		<h2>Градиенты</h2>
+	</div></section>
+	<section class="slide shout slide_text" id="gradient2"><div>
+		<h2>Градиенты</h2>
+	</div></section>
+	
+	
+	
+	<!-- ================== -->
+	<!-- =======CSS animations=========== -->
+	<!-- ================== -->
+	
+	<!-- ================== -->
+	<section class="slide shout"><div>
+		<h2>Анимации</h2>
+	</div></section>
+	
+	<section class="slide" id="oldway">
+		<div>
+			<h2>&nbsp;</h2>
+			<pre>
+				<code>$('.block').<mark>animate</mark>();</code>
+			</pre>
+		</div>
+	</section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide slide_text"><div>
+		<h2>Why not?</h2>
+		<ol>
+			<li>Нужно контролировать остановку анимации</li>
+			<li class="next">Анимировать нечисловые свойства нетривиально</li>
+			<li class="next">Смешивается CSS и JS</li>
+		</ol>
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide shout "><div>
+		<h2>Стандартные кейсы</h2>
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide slide_text" id="input"><div>
+		<h2>Поля форм</h2>
+		<input type="text" placeholder="Blah blah blah" class="animatedinput">
+		<p class="note">Обычный инпут, а приятно.</p>
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide slide_text" id="search"><div>
+		<h2>5 часов в After Effects</h2>
+		<iframe src="../git/ria/files/01-01-Comfort.html" width="470" height="200"></iframe>
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide " id="badge"><div>
+		<h2>Дропдауны</h2>
+		<p>Парам-пам-пам</p>
+		<div class="thebadge">
+			<a href="#" class="thebadge__default">Наведи же курсор!</a>
+			<ul class="thebadge__drop">
+				<li>
+					<a href="#">
+						<i class="icon-ios"></i>
+						<span>Apple</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-android"></i>
+						<span>Android</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-ios"></i>
+						<span>Apple</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide " id="button"><div>
+		<a href="" class="funny-btn">Кнопка</a>
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide slide_text" id="d3"><div>
+		<h2>3D на помощь!</h2>
+		<!-- begin movie -->
+		<div class="movie">
+			<div class="movie__pic" onlick="this.className='flipped';">
+				<div class="movie__flipper">
+					<div class="movie__front"><img src="img/spoiler/pic1.jpg" alt=""></div>
+					<div class="movie__back">
+						<img src="img/spoiler/pic4.jpg" alt="">
+					</div>
+					<div class="movie__left"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end movie -->
+		<!-- begin movie -->
+		<div class="movie movie_orange">
+			<div class="movie__pic">
+				<div class="movie__flipper">
+					<div class="movie__front"><img src="img/spoiler/pic1.jpg" alt=""></div>
+					<div class="movie__back">
+						<h3>Some text here</h3>
+						<p>Whatever happens in Vegas</p>
+					</div>
+					<div class="movie__left"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end movie -->
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide" id="popup"><div>
+		
+			<div class="overlay"></div>
+			<div class="popup popup1">
+				<div class="popup__header">
+					<div class="popup__title">Edit user</div>
+				</div>
+			</div>
+		
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide" id="popup1"><div>
+		
+			<div class="overlay"></div>
+			<div class="popup popup2">
+				<div class="popup__header">
+					<div class="popup__title">Edit user</div>
+				</div>
+			</div>
+		
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide slide_text" id="te"><div>
+		<h2>События для JS</h2>
+		<div class="block">blah</div>
+		
+	</div></section>
+	
+	
+	
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide shout"><div>
+		<h2>Адаптивные сайты</h2>
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/respo.png);background-size:cover;"><div>
+		<!-- <img src="pictures/r/4.png" alt=""> -->
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/r/1.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/r/2.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/r/3.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/r/4.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/r/5.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide shout"><div>
+		<h2>Как делать такие сайты?</h2>
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide"><div>
+		<h2>UWC.org.ua</h2>
+		<ul>
+			<li>Конкурс по верстке</li>
+			<li>Дали только десктоп-дизайн</li>
+			<li>Получили:</li>
+		</ul>
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/r/11.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/r/44.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/r/33.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/r/22.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/r/11.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide shout"><div>
+		<h2>Ретина</h2>
+	</div></section>
+	
+	<section class="slide cover " style="background-image:url(img/twitter.png);background-size:cover;"><div>
+		
+	</div></section>
+	<section class="slide cover " style="background-image:url(img/twitter.svg);background-size:cover;"><div>
+		
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide"><div>
+		<h2>Как решать?</h2>
+		<ul>
+			<li>Картинки двойного размера</li>
+			<li>SVG!</li>
+		</ul>
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide shout"><div>
+		<h2>Автоматизация разработки</h2>
+	</div></section>
+	<section class="slide slide_chapter"><div>
+		<h2>Спрайты 4 проектов <small>я их поддерживаю одновременно</small></h2>
+	</div></section>
+	<section class="slide cover " style="background-image:url(pictures/sprite.png);background-size:auto 100%;background-position:50% 0;background-repeat:no-repeat"><div>
+		<h2 style="color:#fff;">2500px</h2>
+	</div></section>
+	<section class="slide cover " style="background-color:#000;background-image:url(pictures/sprite.png);background-size: cover;background-position:50% -600px;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<section class="slide slide_chapter"><div>
+		<h2>Зачем нужны препроцессоры?
+		<small>или короткая история о социальных кнопках</small>
+		</h2>
+		<p></p>
+	</div></section>
+
+	
+	<section class="slide cover " style="background-color:#000;background-image:url(pictures/socials.jpg);background-size: auto;background-position:50% 50%;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	
+	<section class="slide cover " style="background-color:#000;background-image:url(pictures/css.png);background-size: cover;background-position:50% 50%;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<section class="slide cover " style="background-color:#000;background-image:url(pictures/sass.png);background-size: auto;background-position:50% 50%;background-repeat:no-repeat"><div>
+		
+	</div></section>
+	<section class="slide"><div>
+		<h2>Нет никакого смысла это не использовать</h2>
+	</div></section>
+	<!-- ================== -->
+	<!-- ================== -->
+	<!-- ================== -->
+	<section class="slide shout"><div>
+		<h2>Спасибо!</h2>
+	</div></section>
+	<section class="slide contacts" id="tnx"><div>
+		<h2>Юрий <a href="http://cssing.org.ua">akella</a> Артюх</h2>
+		<dl>
+			<dd>
+				<ul>
+					<li><a href="mailto:akella.a@gmail.com">akella.a@gmail.com</a></li>
+					<li><a href="http://twitter.com/akella">twitter.com/akella</a></li>
+					<li><a href="http::/facebook.com/akella">facebook.com/akella</a></li>
+					<li>Эта презентация <a href="http://akella.github.io/iforum2013">akella.github.io/iforum2013</a></li>
+				</ul>
+			</dd>
+		</dl>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Ссылки</h2>
+		<ol>
+			<li>Доступность HTML5 <a href="http://html5please.com/">http://html5please.com/</a></li>
+			<li>Формы <a href="#">https://github.com/operatino/FBP</a></li>
+			<li>Автоматизация <a href="http://gruntjs.com/">http://gruntjs.com/</a></li>
+			<li>Проверить поддержку <a href="http://caniuse.com/">http://caniuse.com/</a></li>
+		</ol>
+	</div></section>
+	<script src="shower/shower.js"></script>
+</body>
+</html>
