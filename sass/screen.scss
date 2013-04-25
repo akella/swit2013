@@ -197,9 +197,9 @@ body .slide code{
 }
 body .slide.shout{
 	background: #00AEEF url(../img/slide-shout.png) no-repeat 100% 0;
-	-webkit-background-size: 100% 100%;
-	     -o-background-size: 100% 100%;
-	        background-size: 100% 100%;
+	-webkit-background-size: auto 100%;
+	     -o-background-size: auto 100%;
+	        background-size: auto 100%;
 }
 #badge{
 	@include background-image(linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939));
