@@ -187,6 +187,14 @@ body .slide code{
 	font-weight: bold;
 	text-shadow: 2px 2px 1px #333;
 }
+.shoutg{
+	
+	h2{
+		color: #ffffff;
+	font-size: 100px;
+	margin-top: 100px;
+	}
+}
 body .slide.shout{
 	background: #00AEEF url(../img/slide-shout.png) no-repeat 100% 0;
 	-webkit-background-size: 100% 100%;
@@ -268,9 +276,9 @@ body .slide.shout{
 		@include border-radius(7px);
 		@include transition(all .3s ease-in-out);
 		@include box-shadow(2px 2px 9px rgba(3,94,48,.43));
-		background: #ffed01 inline-image('funny-btn.png','image/png') repeat-x 0 0;
+		background: #ffed01 url('../img/funny-btn.png') repeat-x 0 0;
 		&:hover {
-			background: #c7e67d inline-image('funny-btn-h.png','image/png')  repeat-x 100% 0;
+			background: #c7e67d url('../img/funny-btn-h.png')  repeat-x 100% 0;
 		}
 	}
 }
